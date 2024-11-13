@@ -7,8 +7,8 @@ I have chosen to redesign the website for [Kehler Vegetables Farm](https://www.k
 - **Objective**: The client requires a visually appealing and easy-to-navigate website with a responsive design that adapts well to different viewports.
 - **Target Audience**: Local residents near Black Creek who enjoy spending quality time at a local farm.
 - **Message**: The website aims to encourage families to visit the farm, enjoy the atmosphere, and purchase fresh produce.
-- Additionally, it should showcase the quality of the farm’s produce, services, and available activities.
-- **Current Site Issues**: The existing website isn’t optimized for various viewports and does not create a positive impression, which may deter potential visitors. for example there is no optimized menu for the mobile phone veiw port .
+- Additionally, it should showcase the quality of the farm's produce, services, and available activities.
+- **Current Site Issues**: The existing website isn't optimized for various viewports and does not create a positive impression, which may deter potential visitors. for example there is no optimized menu for the mobile phone veiw port .
 
 
 
@@ -16,16 +16,16 @@ I have chosen to redesign the website for [Kehler Vegetables Farm](https://www.k
 
 - **Mood**: The goal is to create a clean, visually appealing website that encourages customers to buy fresh produce from the farm.
 - **Inspiration**:  
-  - [Winsom Farm](https://www.winsomfarm.ca/?gad_source=1&gclid=Cj0KCQiAlsy5BhDeARIsABRc6ZuQLAXp9FOIxOBQmp6ThmvzX5hD43wm6b33Kto1ACe-EKlpJO6znjMaAuWCEALw_wcB)  
-  - [Island Farm Fresh](https://islandfarmfresh.com/)
+  - [Winsom Farm](https://www.winsomfarm.ca/?gad_source=1&gclid=Cj0KCQiAlsy5BhDeARIsABRc6ZuQLAXp9FOIxOBQmp6ThmvzX5hD43wm6b33Kto1ACe-EKlpJO6znjMaAuWCEALw_wcB )![Winsom Farm](images/winsom-farm.png)
+  - [Island Farm Fresh](https://islandfarmfresh.com/)![Island Farm](images/island-farm.png)
   
 - **Color Palette**:
-  - **Primary Color**: Forest Green (#2E8B57) – symbolizes health, freshness, and nature.
-  - **Neutral Color**: Warm Beige (#F5F5DC) – provides a clean, welcoming look without overpowering.
-  - **Highlight Color**: Bright Tomato Red (#FF6347) – adds a fresh, eye-catching accent for important elements.
+  - **Primary Color**: Forest Green (#2E8B57) - symbolizes health, freshness, and nature.
+  - **Neutral Color**: Warm Beige (#F5F5DC) - provides a clean, welcoming look without overpowering.
+  - **Highlight Color**: Bright Tomato Red (#FF6347) - adds a fresh, eye-catching accent for important elements.
 
 - **Fonts**:  
-  I will use **Lora** and **Poppins**. These variable fonts create a welcoming feel and help reduce the website’s load time.
+  I will use **Lora** and **Poppins**. These variable fonts create a welcoming feel and help reduce the website's load time.
 
 ## 3. Website Content
 
@@ -101,7 +101,7 @@ I have chosen to redesign the website for [Kehler Vegetables Farm](https://www.k
  - Contact
  - Gallery 
 - Copy right 
-- heading *some of our pictures*
+- heading **some of our pictures**
 - grid (contains images in each grid element and when you hover over it for desktop view port a caption will pop up on it )
 - footer
 
