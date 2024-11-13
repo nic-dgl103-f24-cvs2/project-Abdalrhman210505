@@ -72,6 +72,28 @@ I have chosen to redesign the website for [Kehler Vegetables Farm](https://www.k
 
 
 
+### Contact Page
+
+#### Activities Section
+
+ - heading
+ - paragraph *listing all the activities that you can do at the farm*
+ - an image for further explanation about activities
+
+#### Form Section
+
+ - form for visits
+  - name Field
+  - phone Field
+  - email Field
+  - Message Field
+  - anchor to submit
+
+#### Map section
+
+- heading *Written Address*
+- embeded map for the farm's location
+
 
 
 
