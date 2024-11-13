@@ -95,5 +95,13 @@ I have chosen to redesign the website for [Kehler Vegetables Farm](https://www.k
 - embeded map for the farm's location
 
 
-
+### Gallery Page
+- nav 
+ - Home
+ - Contact
+ - Gallery 
+- Copy right 
+- heading *some of our pictures*
+- grid (contains images in each grid element and when you hover over it for desktop view port a caption will pop up on it )
+- footer
 
