@@ -62,9 +62,13 @@ header li a {
   font-size: 1.6rem; /* Adjust font size */
 
 }
-
-header li :hover{
-
+.toggle :hover{
+ color:#FF6347 ;
+}
+header li :hover{ 
+color: #FF6347;
+font-size: 2rem;
+transition: 200ms;
 }
 
 .show-items{
@@ -85,9 +89,16 @@ header li :hover{
   font-size: 1.5rem;
 
 }
-section{
-  width: 334px;
+main{
+  width: 100%;
+  max-width: 1130px;
   margin: auto;
+}
+section{
+ 
+  margin: auto;
+  
+  
 }
 /*footer Styling */
 
@@ -96,7 +107,7 @@ section{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: auto;
+  
   gap: 20px;
 }
 
@@ -155,36 +166,49 @@ footer img {
   
 } 
 /*hours table styling */
-.farm-hours{
-  margin: auto;
+.farm-hours {
+  max-width: 1130px; /* Limit the width of the section */
+  margin: 0 auto; /* Centers the section */
+  padding: 20px; /* Adding some padding */
 }
-.farm-hours thead{
-color:#ffffff ;
-background-color:#2E8B57 ;
+
+.farm-hours h3 {
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px;
 }
-.farm-hours tbody tr:nth-child(even) {
-  background-color: #e4bfb9; /*  for even rows */
+
+.farm-hours table {
+  width: 100%; /* Makes the table responsive */
+  border-collapse: collapse; /* Remove space between cells(from the internet because I forgot how to do it */
 }
-.farm-hours tbody tr:nth-child(odd) {
-  background-color: #FF6347; /* for odd rows */
+
+.farm-hours th, 
+.farm-hours td {
+  border: 1px solid #ddd; /* Add borders */
+  padding: 10px; /* Add padding */
+  text-align: center; /* Center-align the text */
 }
-.farm-hours tbody tr:hover {
-  background-color: #f3f3f3; /* Light hover effect */
+
+.farm-hours th {
+  background-color: #2E8B57; /* Add background color for the header */
+  font-weight: bold;
+}
+
+.farm-hours tr:nth-child(Odd) {
+  background-color: #FF6347; /* Zebra-striping for rows the odd ones */
+}
+
+.farm-hours tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
 }
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
-  header{
-    width: 1130px;
+ 
+  main{
+    max-width: 1130px;
     margin: auto;
   }
-  section{
-    width: 1130px;
-    margin: auto;
-  }
-  footer{
-    width: 1130px;
-    margin: auto;
-  }
+ 
   .youtube-embed iframe{/* trying to set the best aspect ratio for exploring in the internet and to make it visually appealing to watch the embedded video by making it 16:9 */
     width: 1130px;
     height: 635px; 
@@ -195,14 +219,13 @@ background-color:#2E8B57 ;
   .farm-hours table{
     width: 1130px;
     margin: auto;
+    font-size: 2rem;
   }
-  .farm-hours ta {
-    font-size: 1rem; /* Increase font size on larger screens */
-    
-  }
+  
 
   .farm-hours thead th {
     padding: 15px; /* Add more padding for headers */
+    
   }
 
   .farm-hours td {
