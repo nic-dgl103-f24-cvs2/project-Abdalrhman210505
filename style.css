@@ -5,6 +5,7 @@
   
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth; /*I took this hack from instagram reel to enhance the smoothness of the webpage */
   }
   
   body {
@@ -27,15 +28,24 @@
 
 /* ============ HEADER STYLING =============*/
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   text-align: center;
-  padding: 2rem; 
+  padding: 20px; 
   background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExazl5OTV2cjBoeHV3MW1zeXM5djIwa2xzYXhoZnA3NGJvb3NmNzkydCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nJfScKSWBENnTph4Ki/giphy.gif') no-repeat center/cover; /* Add your GIF */
   color: white; 
   
+  animation: fadeIn 1.5s ease-in-out;
   margin: auto;
+}
+/*this makes the background gif to fade in I tried to learn it from the internet */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 header a img {
@@ -91,7 +101,8 @@ transition: 200ms;
 }
 main{
   width: 100%;
-  max-width: 1130px;
+ 
+  width: 334px;
   margin: auto;
 }
 section{
@@ -199,13 +210,16 @@ footer img {
 }
 
 .farm-hours tr:hover {
-  background-color: #f1f1f1; /* Highlight row on hover */
+ 
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transform: translateY(-3px); /* learned it from the internet */
 }
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
  
   main{
-    max-width: 1130px;
+    width: 1130px;
     margin: auto;
   }
  
@@ -230,5 +244,12 @@ footer img {
 
   .farm-hours td {
     padding: 12px; /* Add more padding for cells */
+  }
+  nav{
+    width: 1130px;
+    margin: auto;
+  }
+  .divider{
+    width: auto;
   }
 }
