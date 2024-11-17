@@ -166,6 +166,14 @@ footer img {
   width: 100px;
   
 }
+footer{
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+  url('images/farm-png.jpg');
+background-color: #F5F5DC; /* Fallback color */
+background-position: center;
+background-size: cover;
+ 
+}
 
 .end-footer div{
   display: flex;
