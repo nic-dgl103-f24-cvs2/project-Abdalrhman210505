@@ -17,4 +17,58 @@
     line-height: 1.5;
   }
   
-  
+ .logo {
+    max-width: 150px;
+   
+}
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2rem; 
+  background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExazl5OTV2cjBoeHV3MW1zeXM5djIwa2xzYXhoZnA3NGJvb3NmNzkydCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nJfScKSWBENnTph4Ki/giphy.gif') no-repeat center/cover; /* Add your GIF */
+  color: white; 
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); Optional overlay to improve readability */
+  z-index: 0;
+}
+
+header a img {
+  max-width: 150px; 
+  z-index: 1;
+  position: relative;
+}
+
+header nav {
+  z-index: 1; /* Ensures nav stays above the background */
+  position: relative;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem; /* Adjust font size */
+  z-index: 1;
+  position: relative;
+}
