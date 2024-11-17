@@ -13,13 +13,14 @@
 <body>
     <header>
 <a href="index.html"><img class="logo" src="images/kehler-logo1.png" alt="kehler logo"></a>
-<a class="toggle" onclick="showNav()"
+
+
+
+<nav >
+  <a class="toggle" onclick="showNav()"
 ><i class="fa fa-bars" aria-hidden="true"></i
 ></a>
-
-
-<nav>
-    <ul>
+    <ul id="nav-items">
         <li>
             <a href="index.html">Home</a>
         </li>
@@ -34,6 +35,13 @@
 </nav>
 
     </header>
+    <!--the script of the ham bar menu-->
+    <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
     <main>
         <section class="hero-section">
             <h1>About us!</h1>
@@ -55,6 +63,7 @@
             <section class="youtube-embed">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/j00nyVYsemw?si=nuKFvadjaUhRjJE2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
+            
        
 
     </main>
