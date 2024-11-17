@@ -87,11 +87,12 @@ footer{
   border-top: solid  1px black;
   
 }
-.youtube-embed iframe{
+ .youtube-embed iframe{
   width:344px;
- 
+ height: 593px;
   
-}
+} 
+
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
   header{
@@ -106,8 +107,8 @@ footer{
     width: 1130px;
     margin: auto;
   }
-  .youtube-embed iframe{
+  .youtube-embed iframe{/* trying to set the best aspect ratio for exploring in the internet and to make it visually appealing to watch the embedded video by making it 16:9 */
     width: 1130px;
-    height: 570x;
+    height: 635px; 
   }
 }
