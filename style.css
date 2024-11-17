@@ -78,14 +78,60 @@ section{
   margin: auto;
 }
 /*footer Styling */
-footer{
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin: auto;
+  gap: 20px;
 }
 
-.divider{/*making a black top border*/
-  border-top: solid  1px black;
-  
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 10px;
+}
+
+footer nav li {
+  background-color: #FF6347;
+  border-radius: 5px;
+  padding: 10px 50px;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+footer nav li:hover {
+  background-color: #e5533d;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.divider {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.divider h4 {
+  font-size: 1rem;
+  color: #6c757d;
 }
  .youtube-embed iframe{
   width:344px;
