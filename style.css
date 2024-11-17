@@ -117,7 +117,7 @@ main{
 section{
  
   margin: auto;
-  
+ 
   
 }
 /*footer Styling */
@@ -197,15 +197,15 @@ background-size: cover;
 
 /*youtube embedded video styling */
  .youtube-embed iframe{
-  width:344px;
+  width:337px;
  height: 593px;
-  
+  border-radius: 5px;
 } 
 /*hours table styling */
 .farm-hours {
   max-width: 1130px; /* Limit the width of the section */
   margin: 0 auto; /* Centers the section */
-  padding: 20px; /* Adding some padding */
+ margin-bottom: 15px;
 }
 
 .farm-hours h3 {
