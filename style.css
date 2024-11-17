@@ -222,6 +222,32 @@ footer img {
     width: 1130px;
     margin: auto;
   }
+  /*header styling */
+  header{
+    background-size: cover; /* Ensures the GIF covers the entire area */
+  background-attachment: fixed; /* Keeps the GIF fixed when scrolling */
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  
+  }
+  header nav li{
+    background-color:#2E8B57 ;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .toggle{
+    display: none;
+
+  }
+  
  
   .youtube-embed iframe{/* trying to set the best aspect ratio for exploring in the internet and to make it visually appealing to watch the embedded video by making it 16:9 */
     width: 1130px;
@@ -245,10 +271,7 @@ footer img {
   .farm-hours td {
     padding: 12px; /* Add more padding for cells */
   }
-  nav{
-    width: 1130px;
-    margin: auto;
-  }
+
   .divider{
     width: auto;
   }
