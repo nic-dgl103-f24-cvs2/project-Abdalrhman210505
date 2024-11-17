@@ -10,7 +10,7 @@
   body {
     font-size: 1.6rem;
     margin: 0;
-    font-family: "Ubuntu", serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #a1aeb7;
     background-color: #F5F5DC;
@@ -22,6 +22,7 @@
     max-width: 150px;
    
 }
+
 
 
 /* ============ HEADER STYLING =============*/
@@ -71,17 +72,24 @@ header li :hover{
   flex-direction: column;
 
 }
+/*Sections Styling */
 section{
   width: 334px;
   margin: auto;
 }
+/*footer Styling */
 footer{
 
   margin: auto;
 }
 
-.divider{
+.divider{/*making a black top border*/
   border-top: solid  1px black;
+  
+}
+.youtube-embed iframe{
+  width:344px;
+ 
   
 }
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
@@ -97,5 +105,9 @@ footer{
   footer{
     width: 1130px;
     margin: auto;
+  }
+  .youtube-embed iframe{
+    width: 1130px;
+    height: 570x;
   }
 }
