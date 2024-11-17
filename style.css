@@ -12,7 +12,7 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    color: #a1aeb7;
+    color: #000000;
     background-color: #F5F5DC;
     line-height: 1.5;
     
@@ -73,6 +73,18 @@ header li :hover{
 
 }
 /*Sections Styling */
+.hero-section h1,h2{
+  font-family: "Lora", serif;
+  color: #FF6347;
+}
+.hero-section h1{
+ font-size: 3rem;
+}
+.hero-section p{
+  font-weight: 400;
+  font-size: 1.5rem;
+
+}
 section{
   width: 334px;
   margin: auto;
@@ -106,7 +118,7 @@ footer nav li {
 }
 
 footer nav li:hover {
-  background-color: #e5533d;
+  background-color: #FF6347;
 }
 
 .footer-container a {
@@ -127,18 +139,38 @@ footer img {
 .divider {
   margin-top: 20px;
   text-align: center;
+  border-top: solid 1px black;
 }
 
 .divider h4 {
   font-size: 1rem;
   color: #6c757d;
 }
+
+
+/*youtube embedded video styling */
  .youtube-embed iframe{
   width:344px;
  height: 593px;
   
 } 
-
+/*hours table styling */
+.farm-hours{
+  margin: auto;
+}
+.farm-hours thead{
+color:#ffffff ;
+background-color:#2E8B57 ;
+}
+.farm-hours tbody tr:nth-child(even) {
+  background-color: #e4bfb9; /*  for even rows */
+}
+.farm-hours tbody tr:nth-child(odd) {
+  background-color: #FF6347; /* for odd rows */
+}
+.farm-hours tbody tr:hover {
+  background-color: #f3f3f3; /* Light hover effect */
+}
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
   header{
@@ -156,5 +188,24 @@ footer img {
   .youtube-embed iframe{/* trying to set the best aspect ratio for exploring in the internet and to make it visually appealing to watch the embedded video by making it 16:9 */
     width: 1130px;
     height: 635px; 
+  }
+
+
+  /*table styling */
+  .farm-hours table{
+    width: 1130px;
+    margin: auto;
+  }
+  .farm-hours ta {
+    font-size: 1rem; /* Increase font size on larger screens */
+    
+  }
+
+  .farm-hours thead th {
+    padding: 15px; /* Add more padding for headers */
+  }
+
+  .farm-hours td {
+    padding: 12px; /* Add more padding for cells */
   }
 }
