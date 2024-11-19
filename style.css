@@ -314,6 +314,8 @@ background-size: cover;
 
 /* ====================CONTACT PAGE STYLING ===========================*/
 
+
+/* Contact form section syling */
   .contact-section {
             max-width: 400px;
             margin: 0 auto;
@@ -345,4 +347,10 @@ background-size: cover;
         .contact-section button:hover {
             background-color: #45a049;
         }
+
+        .contact-section span{
+          color: #ff2a05;
+          opacity: 0.8;
+        }
+        
        
