@@ -302,6 +302,25 @@ background-size: cover;
   .divider{
     width: auto;
   }
+
+
+
+  /*desktop view port for Contact Page */
+
+  .contact-section{
+    width: 1200px;
+
+   
+  }
+
+  /*map embed section */
+
+  .map-section{
+    display: flex;
+    }
+ 
+
+ 
 }
 
 
@@ -317,12 +336,11 @@ background-size: cover;
 
 /* Contact form section syling */
   .contact-section {
-            max-width: 400px;
-            margin: 0 auto;
-            background: #f9f9f9;
+           background: #2e8b5681;
             padding: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            border: #FF6347 solid 3px;
         }
         .contact-section label {
             display: block;
@@ -334,6 +352,9 @@ background-size: cover;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            color: #333; 
+            background-color: #fff; 
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
         .contact-section button {
             display: inline-block;
@@ -352,5 +373,31 @@ background-size: cover;
           color: #ff2a05;
           opacity: 0.8;
         }
-        
+
+
+
+/* Map Section */
+.map-section{
+display: block;
+}
+.map-section iframe {
+
+  width: 100%;
+  /* Ensures responsiveness */
+  border: 5px solid #FF6347; /* Bold border with your chosen color */
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0 8px 16px rgba(255, 42, 5, 0.4), /* Outer glow effect */
+  0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle neutral shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+} 
+
+.map-section img{
+  width: 100%;
+  border: 5px solid #FF6347; /* Bold border with your chosen color */
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0 8px 16px rgba(255, 42, 5, 0.4), /* Outer glow effect */
+   0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle neutral shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+
+}
        
