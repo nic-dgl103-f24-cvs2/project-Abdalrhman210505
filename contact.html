@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 <!--script for ensuring that all the fields are filled before pressing submit
 note*: I took this one from the internet -->
@@ -26,8 +34,18 @@ note*: I took this one from the internet -->
       alert("Thank you for your submission!");
       // Optionally, submit the form programmatically
       // document.getElementById("contactForm").submit();
-  }
+    }
+
 </script>
+
+<!--the ham bar function -->
+<script>
+  function showNav() {
+    var element = document.getElementById("nav-items");
+    element.classList.toggle("show-items");
+  }
+  </script>
+
 <body>
         <header>
 <a href="index.html"><img class="logo" src="images/kehler-logo1.png" alt="kehler logo"></a>
@@ -88,9 +106,9 @@ note*: I took this one from the internet -->
 
         </section>
 
-        <section class="map-embed">
+        <section class="map-section">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.935985696891!2d-125.12726002300114!3d49.82486833220888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881ba521f0dd49%3A0xb8c066fbd0190296!2sKehler%20Vegetable%20Company!5e0!3m2!1sen!2sus!4v1731879794340!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+            <img src="images/farm-plowing.jpg" alt="farm plowing">
         </section>
 
     </main>
