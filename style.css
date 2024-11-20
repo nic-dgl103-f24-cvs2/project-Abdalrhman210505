@@ -353,15 +353,16 @@ background-size: cover;
   }
 
   /*map embed section */
-.map-section{
+.map-section div{
   display: flex;
+  width: 1200px;
 }
   .map-embed{
-    width:50%;
-    height: 450px;
-    border: 0;
+   
     }
- 
+ .map-section div img{
+  width: 50%;
+ }
 
  
 }
@@ -420,9 +421,7 @@ background-size: cover;
 
 
 /* Map Section */
-.map-section{
-display: block;
-}
+
 .map-section iframe {
 
   width: 100%;
