@@ -446,4 +446,87 @@ background-size: cover;
   color: #FF6347;
   font-size: 3rem;
 }
+
+
+
+
+/* ============================Gallery page Styling =========================================*/
+  /* Gallery Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal.active {
+    display: flex;
+  }
+
+  .modal-content {
+    position: relative;
+    text-align: center;
+  }
+
+  .modal-content img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+  }
+
+  .modal-content .caption {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  /* Navigation Buttons */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-button:hover {
+    background-color: white;
+  }
+
+  .nav-button.left {
+    left: 20px;
+  }
+
+  .nav-button.right {
+    right: 20px;
+  }
        
