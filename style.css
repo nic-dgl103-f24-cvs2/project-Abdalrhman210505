@@ -87,20 +87,33 @@ transition: 200ms;
 
 }
 /*Sections Styling */
-.hero-section h1,h2{
+.hero-section div h1,h2{
   font-family: "Lora", serif;
   color: #FF6347;
 }
 
-.hero-section h1{
+.hero-section div h1{
  font-size: 3rem;
 }
-.hero-section p{
+.hero-section  div p{
   font-weight: 400;
   font-size: 1.5rem;
 
 }
-.hero-section , .about-us-section{
+.hero-section img{
+  width: 100%;
+  border: #FF6347 4px solid;
+  border-radius: 5px;
+}
+
+.about-us-section img{
+  width: 100%;
+  border: #FF6347 4px solid;
+  border-radius: 5px;
+}
+
+
+.hero-section div , .about-us-section div{
 background-color: #2E8B57;
 padding: 10px;
 margin-top: 10px;
@@ -273,7 +286,35 @@ background-size: cover;
     display: none;
 
   }
-  
+/*to make the hero section and the picture within it appear beside each other just in the desktop view port*/
+  .hero-section{
+    display: flex;
+  }
+  .hero-section div {
+    width: 50%;
+  }
+  .hero-section img {
+   margin-top: 10px;
+   margin-bottom: 10px;
+    width: 50%;
+    height: 500px; 
+  }
+
+  .about-us-section{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about-us-section div{
+    width: 50%;
+  }
+
+  .about-us-section img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+     width: 50%;
+     height: 500px; 
+  }
  
   .youtube-embed iframe{/* trying to set the best aspect ratio for exploring in the internet and to make it visually appealing to watch the embedded video by making it 16:9 */
     width: 1200px;
@@ -305,7 +346,7 @@ background-size: cover;
 
 
 
-  /*desktop view port for Contact Page */
+  /*========================desktop view port for Contact Page========================== */
 
   .contact-section{
     width: 1200px;
