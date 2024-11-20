@@ -350,14 +350,16 @@ background-size: cover;
 
   .contact-section{
     width: 1200px;
-
-   
   }
 
   /*map embed section */
-
-  .map-section{
-    display: flex;
+.map-section{
+  display: flex;
+}
+  .map-embed{
+    width:50%;
+    height: 450px;
+    border: 0;
     }
  
 
@@ -440,5 +442,11 @@ display: block;
    0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle neutral shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 
+}
+
+.hero-section-contact h1{
+  font-family: "Lora", serif;
+  color: #FF6347;
+  font-size: 3rem;
 }
        
