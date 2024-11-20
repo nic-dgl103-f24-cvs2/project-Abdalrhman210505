@@ -113,7 +113,7 @@ transition: 200ms;
 }
 
 
-.hero-section div , .about-us-section div{
+.hero-container , .about-us-section div{
 background-color: #2E8B57;
 padding: 10px;
 margin-top: 10px;
@@ -290,9 +290,7 @@ background-size: cover;
   .hero-section{
     display: flex;
   }
-  .hero-section div {
-    width: 50%;
-  }
+  
   .hero-section img {
    margin-top: 10px;
    margin-bottom: 10px;
@@ -305,7 +303,10 @@ background-size: cover;
     flex-direction: row-reverse;
   }
 
-  .about-us-section div{
+  .hero-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
     width: 50%;
   }
 
@@ -415,7 +416,20 @@ background-size: cover;
           color: #ff2a05;
           opacity: 0.8;
         }
-
+        .hero-section-contact a{
+          color: #45a049;
+          text-decoration: none;
+        }
+        .hero-section-contact a:hover{
+          color: #4d9951;
+          text-decoration: underline;
+        }
+        .hero-section-contact h1{
+          font-family: "Lora", serif;
+          color: #FF6347;
+          font-size: 3rem;
+        }
+        
 
 
 /* Map Section */
@@ -441,11 +455,7 @@ background-size: cover;
 
 }
 
-.hero-section-contact h1{
-  font-family: "Lora", serif;
-  color: #FF6347;
-  font-size: 3rem;
-}
+
 
 
 
