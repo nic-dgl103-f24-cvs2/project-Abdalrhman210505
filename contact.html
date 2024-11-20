@@ -12,8 +12,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-</head>
 <!--script for ensuring that all the fields are filled before pressing submit
 note*: I took this one from the internet -->
 <script>
@@ -45,6 +43,8 @@ note*: I took this one from the internet -->
     element.classList.toggle("show-items");
   }
   </script>
+</head>
+
 
 <body>
         <header>
@@ -72,7 +72,7 @@ note*: I took this one from the internet -->
 
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section-contact">
             <h1>Contact Us information</h1>
 
             <h2>Activities</h2>
@@ -100,14 +100,16 @@ note*: I took this one from the internet -->
                     <label for="message">Message<span>    *required</span></label>
                     <textarea id="message" name="message" placeholder="Your Message" rows="4"></textarea>
                     
-                    <button href="#" onclick="validateForm()">Submit</button>
+                    <button onclick="validateForm()">Submit</button>
                 </form>
         
 
         </section>
 
         <section class="map-section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.935985696891!2d-125.12726002300114!3d49.82486833220888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881ba521f0dd49%3A0xb8c066fbd0190296!2sKehler%20Vegetable%20Company!5e0!3m2!1sen!2sus!4v1731879794340!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div>
+            <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.935985696891!2d-125.12726002300114!3d49.82486833220888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881ba521f0dd49%3A0xb8c066fbd0190296!2sKehler%20Vegetable%20Company!5e0!3m2!1sen!2sus!4v1731879794340!5m2!1sen!2sus" 
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <img src="images/farm-plowing.jpg" alt="farm plowing">
         </section>
 
@@ -145,7 +147,7 @@ note*: I took this one from the internet -->
             <li>
                 follow along with the farm and to see whats growing find us on facebook and instagram.
                 
-                <div><a href="https://www.instagram.com/kehlervegetables"><img src="images/instagram (1).png" alt="">@kehlervegetables</a></div>
+                <div><a href="https://www.instagram.com/kehlervegetables"><img src="images/instagram.png" alt="instagram logo">@kehlervegetables</a></div>
             </li>
            </ul>
           </div>
@@ -154,5 +156,6 @@ note*: I took this one from the internet -->
           <h4>©2024 - <span>This is fictional website for a college project</span> | All right reserved</h4>
         </div>
       </footer>
+      
 </body>
 </html>
