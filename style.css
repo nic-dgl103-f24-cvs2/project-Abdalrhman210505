@@ -66,6 +66,7 @@ header ul {
 }
 
 header li a {
+  padding: 5px;
   text-decoration: none;
   color: white;
   font-weight: bold;
