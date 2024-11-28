@@ -471,6 +471,9 @@ background-size: cover;
     gap: 10px;
     padding: 10px;
   }
+  .hero-section h1{
+    color:#FF6347;
+  }
 
   .gallery-grid img {
     width: 100%;
