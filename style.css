@@ -90,7 +90,10 @@ transition: 200ms;
 /*Sections Styling */
 .hero-section div h1,h2{
   font-family: "Lora", serif;
-  color: #FF6347;
+  color: #ffffff;
+}
+#activities{
+  color: #000000;
 }
 
 .hero-section div h1{
