@@ -68,7 +68,7 @@ header ul {
 header li a {
   padding: 5px;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 1.6rem; /* Adjust font size */
 
