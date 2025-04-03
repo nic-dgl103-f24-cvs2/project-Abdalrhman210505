@@ -1,4 +1,24 @@
 "use strict";
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Smooth Scroll for navigation links
+  const navLinks = document.querySelectorAll("nav ul li a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", function (event) {
+      if (this.getAttribute("href").startsWith("#")) {
+        event.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 50,
+            behavior: "smooth"
+          });
+        }
+      }
+    });
+  });
+
   // Back to top button
   const backToTop = document.createElement("button");
   backToTop.textContent = "↑";
