@@ -77,68 +77,6 @@
     </div>
     <button class="nav-button right" id="nextButton">❯</button>
   </div>
-  
-  <script>
-    // JavaScript for Interactive Gallery
-    const images = document.querySelectorAll('.gallery-grid img');
-    const modal = document.getElementById('imageModal');
-    const modalImage = document.getElementById('modalImage');
-    const modalCaption = document.getElementById('modalCaption');
-    const prevButton = document.getElementById('prevButton');
-    const nextButton = document.getElementById('nextButton');
-  
-    let currentIndex = 0;
-  
-    // Open modal when an image is clicked (I took all this code from the internet )
-    images.forEach((img, index) => {
-      img.addEventListener('click', () => {
-        modal.classList.add('active');
-        currentIndex = index;
-        updateModal();
-      });
-    });
-  
-    // Close modal when clicking outside the image
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.remove('active');
-      }
-    });
-  
-    // Update modal content
-    function updateModal() {
-      const currentImage = images[currentIndex];
-      modalImage.src = currentImage.src;
-      modalCaption.textContent = currentImage.alt;
-    }
-  
-    // Navigate to previous image
-    prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-      updateModal();
-    });
-  
-    // Navigate to next image
-    nextButton.addEventListener('click', () => {
-      currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-      updateModal();
-    });
-  
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      if (modal.classList.contains('active')) {
-        if (e.key === 'ArrowLeft') {
-          prevButton.click();
-        } else if (e.key === 'ArrowRight') {
-          nextButton.click();
-        } else if (e.key === 'Escape') {
-          modal.classList.remove('active');
-        }
-      }
-    });
-  </script>
-
-
     </main>
 
     <footer>
@@ -183,6 +121,7 @@
           <h4>©2024 - <span>This is fictional website for a college project</span> | All right reserved</h4>
         </div>
       </footer>
+      <script src="app.js"></script>
 </body>
 
 </html>

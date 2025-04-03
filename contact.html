@@ -12,29 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<!--script for ensuring that all the fields are filled before pressing submit
-note*: I took this one from the internet -->
-<script>
-  function validateForm() {
-      // Get form fields
-      const name = document.getElementById("name").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const message = document.getElementById("message").value.trim();
 
-      // Check if any field is empty
-      if (!name || !phone || !email || !message) {
-          alert("Please fill in all fields.");
-          return;
-      }
 
-      // If all fields are filled
-      alert("Thank you for your submission!");
-      // Optionally, submit the form programmatically
-      // document.getElementById("contactForm").submit();
-    }
-
-</script>
 
 <!--the ham bar function -->
 <script>
@@ -165,6 +144,6 @@ note*: I took this one from the internet -->
           <h4>©2024 - <span>This is fictional website for a college project</span> | All right reserved</h4>
         </div>
       </footer>
-      
+      <script src="app.js"></script>
 </body>
 </html>
