@@ -1,5 +1,9 @@
 "use strict";
 
+window.onload = function () {
+  alert("Welcome to our website!");
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   // Smooth Scroll for navigation links
   const navLinks = document.querySelectorAll("nav ul li a");
