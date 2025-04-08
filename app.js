@@ -143,7 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
   
         // If all fields are filled
-        alert("Thank you for your submission!");
+        else{ alert("Thank you for your submission!");}
+        
         // Optionally, submit the form programmatically
         // document.getElementById("contactForm").submit();
       }
