@@ -1,8 +1,10 @@
 "use strict";
 
-window.onload = function () {
-  alert("Welcome to our website!");
-};
+if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/") {
+  window.onload = function () {
+    alert("Welcome to our website!");
+  };
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   // Smooth Scroll for navigation links
